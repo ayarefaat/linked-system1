@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: cursive
+}
+/* Global styling */
+.container{
+    padding: 0 7%;
+    height: 100%
+}
+ul{
+    list-style: none;
+    padding: 0; margin: 0
+}
+a{
+    color: #000;
+    text-decoration: none
+}
+.overlay{
+    background-color: rgba(236, 226, 226, 0.7);
+    background-position: center bottom;
+    height: 100%;
+    padding: 25px 0;
+}
+/* /Global styling */
+/* start header styling */
+/* start info */
+header .info{
+    overflow: hidden;
+    margin-top: 10p
+}
+header .info .call{
+    float: left;
+    width: 80%
+}
+header .info .icons{
+    float: left;
+    width: 20%;
+    padding: 20px;
+    text-align: right;
+    font-size: 20px
+}
+header .info .icons .face{
+    padding: 0 30px;
+}
+header hr{
+    margin-top: -10px
+}
+/* end info */
+/* start nav styling */
+header nav{
+    overflow: hidden;
+}
+header nav .logo{
+    float: left;
+    width: 30%
+}
+header nav .navbar{
+    float: left;
+    width: 70%;
+    text-align: right
+}
+header nav .navbar ul li{
+    display: inline-block;
+    padding: 10px
+}
+header nav .navbar ul li a{
+    text-decoration: none;
+}
+header nav .navbar ul li a:hover{
+    width: 40px;
+    height: 40px;
+    background-color: cadetblue
+}
+header nav .navbar .search{
+    display: inline-block;
+}
+/* end nav styling */
+/* end header styling */
+/* start content */
+#content{
+    background-image: url('2.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center bottom;
+    margin-bottom: 50px
+}
+section#content{
+    overflow: hidden;
+}
+#content .contact{
+    float: left;
+    width: 70%;
+}
+#content .contact h2{
+    color: #444;
+    font-size: 2em
+}
+#content .contact p{
+    color: rgb(112, 102, 102);
+    margin-bottom: 50px
+}
+#content .contact input[type="submit"]{
+    border: 2px solid transparent;
+    background-color: cadetblue;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 3px;
+    transition: all 0.4s ease
+}
+#content .contact input[type="submit"]:hover{
+    background-color: transparent;
+    border-color: cadetblue;
+    color: #444;
+}
+#content .information{
+    float: left;
+    width: 30%;
+}
+#content .information .websites .item{
+    border: 2px solid transparent;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+#content .information .websites .item h3{
+    display: inline-block;
+    color: #444
+}
+#content .information .websites .item p{
+    padding: 0 10px;
+    color: rgb(43, 42, 42)
+}
+#content .information .websites .item .home{
+    width: 60px;
+    height: 50px;
+    background-color: cadetblue;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+    color: white
+}
+/* end content */
+/* start social */
+#social{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 50px
+}
+#social h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+#social h1::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: cadetblue;
+    display: inline-block;
+    position: relative;
+    bottom: 30px
+}
+#social h1::after{
+    content: "With us";
+    color: cadetblue;
+    font-weight: normal
+}
+#social .one{
+    display: inline-block;
+    width: 500px;
+    height: 1.5px;
+    background-color: cadetblue;
+    margin-top: -30px;
+}
+#social .one::before{
+    content: "";
+    width: 100px;
+    height: 6px;
+    background-color: cadetblue;
+    display: inline-block;
+    position: relative;
+    bottom: 13px
+}
+#social p{
+    color: #444;
+    position: relative;
+    bottom: 15px
+}
+#social .sites .facebook,#social .sites .linkedin{
+    float: left;
+    width: 50%
+}
+#social .sites .facebook .fb, #social .sites .linkedin .lin{
+    display: inline-block;
+    color: white;
+    width: 400px;
+    height: 150px;
+    background-color: rgb(38, 52, 109);
+    font-size: 50px;
+    line-height: 150px;
+    margin-bottom: 20px
+}
+#social .sites .linkedin .lin{
+    background-color: rgb(28, 158, 209)
+}
+#social .sites .facebook  a, #social .sites .linkedin  a{
+    color: #444
+}
+/* start last section */
+#last{
+    overflow: hidden;
+    background-color: rgb(9, 17, 48);
+    padding: 30px 0 0 0;
+    padding-bottom:0;
+    margin-bottom: 20px
+}
+#last .linked{
+    float: left;
+    width: 25%;
+    margin: 0 1%;
+    color: white;
+}
+#last .linked .links a{
+    color: #fff;
+}
+#last .linked .links a::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 15px;
+}
+#last .linked .links a:hover{
+    color: cadetblue
+}
+#last .linked .line{
+    width: 200px;
+    height: 1px;
+    background-color: #fff;
+    margin: 8px 0
+}
+#last .linked input[type="search"]{
+    margin-top: 25px;
+    padding: 12px
+}
+#last .linked .lens{
+    width: 42px;
+    height: 42px;
+    background-color: rgb(28, 158, 209);
+    display: inline-block;
+    border-radius: 3px;
+    line-height: 38px;
+    font-size: 22px;
+    text-align: center;
+    position: relative;
+    right: 7px;
+    top:2px
+}
